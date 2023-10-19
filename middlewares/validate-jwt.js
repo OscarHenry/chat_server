@@ -20,7 +20,7 @@ const validateJWT = (req, res, next) => {
     
     next();
     } catch (error) {
-        console.log(error);
+        console.log('validate jwt $error',error);
         return res.status(401).json({
             ok: false,
             msg: 'Invalid token'

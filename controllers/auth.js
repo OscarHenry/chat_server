@@ -36,7 +36,7 @@ const createUser = async (req = request, resp = response) => {
         });
 
     } catch (error) {
-        console.log(error);
+        console.log('auth $error',error);
         return resp.status(400).json({
             ok: false,
             msg: 'Server Error'
@@ -79,7 +79,7 @@ const loginUser = async (req = request, resp = response) => {
         });
 
     } catch (error) {
-        console.log(error);
+        console.log('auth $error',error);
         return resp.status(400).json({
             ok: false,
             msg: 'Server Error'
